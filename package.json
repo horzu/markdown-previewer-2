@@ -1,4 +1,5 @@
 {
+  "homepage": "https://horzu.github.io/markdown-previewer-2/",
   "name": "markdown-previewer-2",
   "version": "0.1.0",
   "private": true,
@@ -7,6 +8,7 @@
     "@testing-library/react": "^11.2.5",
     "@testing-library/user-event": "^12.7.1",
     "bootstrap": "^4.6.0",
+    "gh-pages": "^3.1.0",
     "marked": "^2.0.0",
     "react": "^17.0.1",
     "react-bootstrap": "^1.5.0",
@@ -16,6 +18,8 @@
     "web-vitals": "^1.1.0"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
